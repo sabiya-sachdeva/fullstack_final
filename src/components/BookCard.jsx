@@ -22,15 +22,18 @@ function BookCard ({book,deleteBook}){
           />
           <div className="desc">
             <h2><a href={`/show-book/${book._id}`}>{book.tittle}</a></h2>
+
+            <h2>{book.title}</h2>
             <h3>{book.author}</h3>
-            <p>{book.description}</p>
+            <p>{book.description}
 
             <button
-              className="btn btn-warning float-right float-bottom decorated-btn"
+              className= "button"
               onClick={handleDelete}
             >
               x
             </button>
+            </p>
           </div>
         </div>
       </div>
